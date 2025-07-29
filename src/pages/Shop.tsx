@@ -19,56 +19,56 @@ const Shop: React.FC = () => {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState('all');
 
-  cconst flowers: Flower[] = [
-  {
-    id: '1',
-    name: 'Red Rose',
-    price: 45,
-    image: '/images/red rose.webp',
-    description: 'Classic red roses perfect for romantic occasions',
-    category: 'roses',
-  },
-  {
-    id: '2',
-    name: 'Tulip Garden Mix',
-    price: 32,
-    image: '/images/purple tulip.jpg',
-    description: 'Colorful tulips bringing spring to your home',
-    category: 'tulips',
-  },
-  {
-    id: '3',
-    name: 'Sunflower Joy',
-    price: 28,
-    image: '/images/sunflower Bouquest.png',
-    description: 'Bright sunflowers to light up any room',
-    category: 'sunflowers',
-  },
-  {
-    id: '4',
-    name: 'White Jasmine Elegance',
-    price: 38,
-    image: '/images/jasmine - Copy.jpg',
-    description: 'Elegant white jasmine for sophisticated occasions',
-    category: 'lilies', // or rename this to 'jasmines' if you update the category
-  },
-  {
-    id: '5',
-    name: 'Pink Rose Delight',
-    price: 52,
-    image: '/images/pink rose bouquet.jpg',
-    description: 'Luxurious pink roses for special celebrations',
-    category: 'peonies', // consider changing category to 'roses' or add 'bouquet'
-  },
-  {
-    id: '6',
-    name: 'Daisy Charm',
-    price: 24,
-    image: '/images/daisy.webp',
-    description: 'Natural daisies for a rustic charm',
-    category: 'mixed', // or create a new category: 'daisies'
-  }
-];
+  const flowers: Flower[] = [
+    {
+      id: '1',
+      name: 'Red Rose ',
+      price: 45,
+      image: 'https://www.rawpixel.com/search/red%20rose?page=1&sort=curated?auto=compress&cs=tinysrgb&w=400',
+      description: 'Classic red roses perfect for romantic occasions',
+      category: 'roses'
+    },
+    {
+      id: '2',
+      name: 'Tulip Garden Mix',
+      price: 32,
+      image: 'https://images.pexels.com/photos/1076719/pexels-photo-1076719.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Colorful tulips bringing spring to your home',
+      category: 'tulips'
+    },
+    {
+      id: '3',
+      name: 'Sunflower Joy',
+      price: 28,
+      image: 'https://images.pexels.com/photos/1263986/pexels-photo-1263986.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Bright sunflowers to light up any room',
+      category: 'sunflowers'
+    },
+    {
+      id: '4',
+      name: 'White Lily Elegance',
+      price: 38,
+      image: 'https://images.pexels.com/photos/1068470/pexels-photo-1068470.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Elegant white lilies for sophisticated occasions',
+      category: 'lilies'
+    },
+    {
+      id: '5',
+      name: 'Pink Peony Delight',
+      price: 52,
+      image: 'https://images.pexels.com/photos/1440406/pexels-photo-1440406.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Luxurious pink peonies for special celebrations',
+      category: 'peonies'
+    },
+    {
+      id: '6',
+      name: 'Mixed Wildflowers',
+      price: 24,
+      image: 'https://images.pexels.com/photos/1031698/pexels-photo-1031698.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Natural mixed wildflowers for a rustic charm',
+      category: 'mixed'
+    }
+  ];
 
   const categories = [
     { id: 'all', name: 'All Flowers' },
@@ -117,11 +117,11 @@ const Shop: React.FC = () => {
             <button
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
-              className={`px-6 py-3 rounded-full font-medium transition-all ${
+              className={px-6 py-3 rounded-full font-medium transition-all ${
                 selectedCategory === category.id
                   ? 'bg-gradient-to-r from-emerald-500 to-pink-500 text-white shadow-lg'
                   : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
-              }`}
+              }}
             >
               {category.name}
             </button>
@@ -183,3 +183,4 @@ const Shop: React.FC = () => {
 };
 
 export default Shop;
+i want to change image of flower with accurate photos
